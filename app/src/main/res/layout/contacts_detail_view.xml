@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ContactsDetailViewFragment">
+
+
+    <ImageView
+        android:id="@+id/imgLargeURL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="131dp"
+        android:layout_marginLeft="131dp"
+        android:layout_marginEnd="130dp"
+        android:layout_marginRight="130dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/user_large_hdpi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tvDVName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="174dp"
+        android:layout_marginLeft="174dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="174dp"
+        android:layout_marginRight="174dp"
+        android:hint="Full Name"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgLargeURL" />
+
+    <TextView
+        android:id="@+id/tvDVHomePhone"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="35dp"
+        android:background="@drawable/textview_border"
+        android:gravity="bottom|start"
+        android:hint="No Home Phone"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toBottomOf="@+id/tvlblHomePhone"
+        app:layout_constraintEnd_toEndOf="@+id/textView7"
+        app:layout_constraintHorizontal_bias="0.03"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvDVName" />
+
+    <TextView
+        android:id="@+id/tvDVEmail"
+        android:layout_width="403dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="246dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="244dp"
+        android:background="@drawable/textview_border"
+        android:gravity="bottom|start"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDVName" />
+
+    <TextView
+        android:id="@+id/tvDVBirthdate"
+        android:layout_width="403dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:background="@drawable/textview_border"
+        android:gravity="bottom|start"
+        android:hint="No Birthdate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDVAddress" />
+
+    <TextView
+        android:id="@+id/tvDVAddress"
+        android:layout_width="403dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:background="@drawable/textview_border"
+        android:gravity="bottom|left"
+        android:hint="No Address"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/tvDVMobilePhone"
+        android:layout_width="0dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="35dp"
+        android:background="@drawable/textview_border"
+        android:gravity="bottom|start"
+        android:hint="No Mobile Phone"
+        app:layout_constraintBottom_toBottomOf="@+id/tvlblAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/tvlblAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Address"
+        android:textAllCaps="true"
+        app:layout_constraintBottom_toBottomOf="@+id/tvDVAddress"
+        app:layout_constraintStart_toStartOf="@+id/tvDVAddress"
+        app:layout_constraintTop_toTopOf="@+id/tvDVAddress"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tvlblEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="16dp"
+        android:hint="No Email"
+        android:text="Email"
+        android:textAllCaps="true"
+        app:layout_constraintBottom_toBottomOf="@+id/tvDVEmail"
+        app:layout_constraintStart_toStartOf="@+id/tvDVEmail"
+        app:layout_constraintTop_toTopOf="@+id/tvDVEmail"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tvlblBirthDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="29dp"
+        android:text="Birthdate"
+        android:textAllCaps="true"
+        app:layout_constraintBottom_toBottomOf="@+id/tvDVBirthdate"
+        app:layout_constraintStart_toStartOf="@+id/tvDVBirthdate"
+        app:layout_constraintTop_toTopOf="@+id/tvDVBirthdate"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tvlblHomePhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Phone"
+        android:textAllCaps="true"
+        app:layout_constraintBottom_toBottomOf="@+id/tvDVMobilePhone"
+        app:layout_constraintStart_toStartOf="@+id/tvDVMobilePhone"
+        app:layout_constraintTop_toTopOf="@+id/tvDVMobilePhone"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tvlblMobilePhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginBottom="16dp"
+        android:text="Phone"
+        android:textAllCaps="true"
+        app:layout_constraintBottom_toBottomOf="@+id/tvDVHomePhone"
+        app:layout_constraintStart_toStartOf="@+id/tvDVHomePhone"
+        app:layout_constraintTop_toTopOf="@+id/tvDVHomePhone"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Mobile"
+        android:textAllCaps="true"
+        app:layout_constraintEnd_toEndOf="@+id/tvDVMobilePhone"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="217dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:text="Home"
+        android:textAllCaps="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

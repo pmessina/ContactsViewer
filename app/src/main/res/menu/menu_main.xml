@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.kinandcarta.contactsviewer.MainActivity">
+
+<!--    android:icon="@drawable/favorite_false_hdpi"-->
+
+<!--    android:icon="@drawable/favorite_selector"-->
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:checkable="true"
+        android:title="@string/action_settings"
+        app:actionViewClass="android.widget.CheckBox"
+        app:actionLayout="@layout/custom_toggle_button"
+        app:showAsAction="always" />
+</menu>
